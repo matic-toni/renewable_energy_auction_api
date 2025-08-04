@@ -17,10 +17,10 @@ logger = logging.getLogger(__name__)
 
 
 @app.post("/add_bid", status_code=status.HTTP_201_CREATED)
-def add_bid(bid_model: BidRequestResponse) -> None:
-    logger.info(f"Received new bid: {bid_model.producer} - price: {bid_model.price}")
+def add_bid(bid_request: BidRequestResponse) -> None:
+    logger.info(f"Received new bid: {bid_request}")
 
-    bid: Bid = Bid(bid_model.producer, bid_model.price)
+    bid: Bid = Bid(bid_request.producer, bid_request.price)
     try:
         with lock:
             auction.add_bid(bid)
