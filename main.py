@@ -29,7 +29,6 @@ def add_bid(bid_request: BidRequestResponse) -> None:
                             detail=f"Failed to add bid: {str(e)}")
 
 
-
 @app.get("/get_lowest_bid", response_model=BidRequestResponse)
 def get_lowest_bid() -> BidRequestResponse:
     with lock:
