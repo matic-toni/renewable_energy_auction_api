@@ -9,19 +9,20 @@ A FastAPI application that manages bids from renewable energy producers and effi
 ## Setup & Installation
 
 1. **Create and activate virtual environment**
+    - Windows
+       ```bash
+       python -m venv venv
+       ```
+       ```bash
+       .\venv\Scripts\activate
+       ```
+    
    - Linux/MacOS
        ```bash
        python -m venv venv
        ```
      ```bash
      source venv/bin/activate
-     ```
-   - Windows
-     ```bash
-     python -m venv venv
-     ```
-     ```bash
-     .\venv\Scripts\activate
      ```
   
 2. **Install dependencies:**
