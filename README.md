@@ -1,14 +1,20 @@
 # Renewable Energy Auction System
 
-A FastAPI application that manages bids from renewable energy producers and efficiently retrieves the lowest-cost offer using a min-heap data structure.
+A FastAPI application that manages bids from renewable energy producers and efficiently retrieves the lowest-cost offer.
 
 ## Requirements
 1. Python 3.7+
 2. pip
+3. Git
 
 ## Setup & Installation
 
-1. **Create and activate virtual environment**
+1. **Clone the repository**
+    ```bash
+       git clone https://github.com/matic-toni/renewable_energy_auction_api.git
+    ```
+
+2. **Create and activate virtual environment**
     - Windows
        ```bash
        python -m venv venv
@@ -25,17 +31,17 @@ A FastAPI application that manages bids from renewable energy producers and effi
      source venv/bin/activate
      ```
   
-2. **Install dependencies:**
+3. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run the application:**
+4. **Run the application:**
    ```bash
    uvicorn main:app --reload
    ```
 
-4. **Access the API's docs:** http://localhost:8000/docs
+5. **Access the API's docs:** http://localhost:8000/docs
 
 ## API Endpoints
 
