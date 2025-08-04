@@ -29,7 +29,7 @@ A FastAPI application that manages bids from renewable energy producers and effi
 
 3. **Run the application:**
    ```bash
-   uvicorn main:app
+   uvicorn main:app --reload
    ```
 
 4. **Access the API:** http://localhost:8000
@@ -80,3 +80,6 @@ Uses Python's `heapq` for efficient bid management:
 - Add bid: O(log n)
 - Get lowest: O(1)
 - Interactive docs: http://localhost:8000/docs
+
+Solution is:
+- Thread-safe: Uses `threading.Lock()` to prevent race conditions during read/write access to the bid heap.
