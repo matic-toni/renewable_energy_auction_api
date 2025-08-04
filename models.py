@@ -1,12 +1,6 @@
-from pydantic import BaseModel, field_validator
+from pydantic import BaseModel
 
 
-class BidModel(BaseModel):
+class BidRequestResponse(BaseModel):
     producer: str
     price: float
-
-    @field_validator('price')
-    def check_price(cls, price):
-        if price < 0:
-            raise ValueError("Price has to be larger than 0")
-        return price

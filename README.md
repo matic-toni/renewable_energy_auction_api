@@ -17,7 +17,9 @@ A FastAPI application that manages bids from renewable energy producers and effi
    - Windows
      ```bash
      python -m venv venv
-     venv\Scripts\activate
+     ```
+     ```bash
+     .\venv\Scripts\activate
      ```
   
 2. **Install dependencies:**
