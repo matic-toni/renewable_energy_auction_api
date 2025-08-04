@@ -12,8 +12,10 @@ A FastAPI application that manages bids from renewable energy producers and effi
    - Linux/MacOS
        ```bash
        python -m venv venv
-       source venv/bin/activate
        ```
+     ```bash
+     source venv/bin/activate
+     ```
    - Windows
      ```bash
      python -m venv venv
