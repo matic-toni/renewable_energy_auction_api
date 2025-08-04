@@ -11,7 +11,7 @@ A FastAPI application that manages bids from renewable energy producers and effi
 
 1. **Clone the repository**
     ```bash
-       git clone https://github.com/matic-toni/renewable_energy_auction_api.git
+    git clone https://github.com/matic-toni/renewable_energy_auction_api.git
     ```
 
 2. **Create and activate virtual environment**
